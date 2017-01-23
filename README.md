@@ -1,6 +1,24 @@
 # Human-Activity-Recognition-Using-Smartphones
 Getting and Cleaning Data Course Project
-==================================================================
+The objective of this ptoject is to read and prepare tidy datasets for future wearable computing predictions and data science projects.
+The data sources are from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The r scipt is written as a function: run_analysis that does the following.                        
+1. To run the script, first set the dirctory to the folder in which the zip file is extracted: use setwd command. 
+2. Then execute the function - run_analysis. It will read the input data files and write the tidy datasets into the same folder
+2. The script reads the two sets of train and test datasets using fread/read.table statements
+3. The train and test datasets are combined into a single dataset- combi using rbind
+4. The columns are renamed using the 561 names provided in the features file
+5. The measurement required for the analysis are identified by using function for regular expressions: gsub statement
+6. The actvity and subject columns are added using cbind statement
+7. The package 'dplyr' is used and following functions are called to generate the 2nd tidy dataset:'
+    group_by and summarise_each to computte the mean for all measurements by activity_label and then by subject
+8. Both the datasets are now written intop the folder (current working directory)
+
+
+Reference:
+================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 ==================================================================
