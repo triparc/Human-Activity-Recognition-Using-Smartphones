@@ -15,11 +15,11 @@ The r scipt is written as a function: run_analysis that does the following.   �
 7. The package 'dplyr' is used and following functions are called to generate the 2nd tidy dataset:'group_by' and 'summarise_each' to computte the mean for all measurements by activity_label and then by subject  
 8. Both the datasets are now written intop the folder (current working directory)  
 
-Reference:  
+# Reference:  
 ================================================================  
-Human Activity Recognition Using Smartphones Dataset  
-Version 1.0  
-==================================================================  
+Human Activity Recognition Using Smartphones Dataset   
+Version 1.0   
+==================================================================   
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.  
 Smartlab - Non Linear Complex Systems Laboratory  
 DITEN - Università degli Studi di Genova.  
