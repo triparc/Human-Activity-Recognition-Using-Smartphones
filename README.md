@@ -13,7 +13,7 @@ The r scipt is written as a function: run_analysis that does the following. Â  Â
 5. The measurement required for the analysis are identified by using function for regular expressions: gsub statement   
 6. The actvity and subject columns are added using cbind statement   
 7. The package 'dplyr' is used and following functions are called to generate the 2nd tidy dataset:'group_by' and 'summarise_each' to computte the mean for all measurements by activity_label and then by subject  
-8. Both the datasets are now written intop the folder (current working directory)  
+8. Both the datasets are now written intop the folder (current working directory)   
 
 # Reference:  
 ================================================================  
